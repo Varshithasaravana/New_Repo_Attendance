@@ -18,9 +18,8 @@ body{
         ),
         url("../images/img.jpg");
 
-    background-size:cover;
-
-    background-position:center;
+   background-size: cover;
+background-position: center;
 
     background-repeat:no-repeat;
 
@@ -65,7 +64,7 @@ body{
 
     font-weight:bold;
 
-    color:#1e293b;
+    color:#9212c5;
 
     margin-bottom:25px;
 }

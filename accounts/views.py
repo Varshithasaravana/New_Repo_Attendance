@@ -130,6 +130,15 @@ def register_view(request):
 def is_teacher(user):
 
     return Teacher.objects.filter(user=user).exists()
+
+
+
+#LANDING VIEW
+
+def landing_page(request):
+    return render(request, 'landing.html')
+
+
 # LOGIN VIEW
 
 def login_view(request):

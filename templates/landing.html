@@ -1,0 +1,591 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance Management System</title>
+
+    <link rel="stylesheet"
+          href="{% static 'css/landing.css' %}">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        <span class="logo-icon">✓</span>
+
+        <div>
+            <h2>Attendance</h2>
+            <small>Management System</small>
+        </div>
+
+    </div>
+
+
+    <div class="nav-links">
+
+        <a href="#home">Home</a>
+
+        <a href="#features">Features</a>
+
+        <a href="#screenshots">Screenshots</a>
+
+        <a href="#about">About</a>
+
+        <!-- Change this URL if your login URL is different -->
+       <a href="{% url 'login' %}" class="login-btn">
+    Login
+</a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="welcome-text">
+            WELCOME TO
+        </p>
+
+
+        <h1>
+            Attendance<br>
+            <span>Management System</span>
+        </h1>
+
+
+        <p class="hero-description">
+
+            A simple and efficient web-based system
+            for managing students, recording attendance
+            and generating attendance reports.
+
+        </p>
+
+
+       <a href="{% url 'login' %}" class="primary-btn">
+    Login to System
+</a>
+
+    </div>
+
+
+    <!-- Simple Dashboard Illustration -->
+
+    <div class="dashboard-card">
+
+        <div class="dashboard-header">
+
+            <span>Dashboard</span>
+
+            <span class="circle"></span>
+
+        </div>
+
+
+        <div class="dashboard-body">
+
+            <div class="sidebar">
+
+                <div class="side-item active">
+                    Dashboard
+                </div>
+
+                <div class="side-item">
+                    Students
+                </div>
+
+                <div class="side-item">
+                    Attendance
+                </div>
+
+                <div class="side-item">
+                    Reports
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-main">
+
+                <h3>Attendance Overview</h3>
+
+
+                <div class="stats">
+
+                    <div class="stat-box">
+
+                        <small>Total Students</small>
+
+                        <strong>120</strong>
+
+                    </div>
+
+
+                    <div class="stat-box">
+
+                        <small>Present</small>
+
+                        <strong>105</strong>
+
+                    </div>
+
+
+                    <div class="stat-box">
+
+                        <small>Absent</small>
+
+                        <strong>15</strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="chart">
+
+                    <div class="bar bar1"></div>
+
+                    <div class="bar bar2"></div>
+
+                    <div class="bar bar3"></div>
+
+                    <div class="bar bar4"></div>
+
+                    <div class="bar bar5"></div>
+
+                    <div class="bar bar6"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="section" id="features">
+
+    <h2 class="section-title">
+        Features
+    </h2>
+
+    <p class="section-description">
+        Everything you need to manage student attendance.
+    </p>
+
+
+    <div class="feature-container">
+
+
+        <!-- Student Management -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                👨‍🎓
+            </div>
+
+            <h3>
+                Student Management
+            </h3>
+
+            <p>
+                Add, update and manage student
+                information easily.
+            </p>
+
+        </div>
+
+
+
+        <!-- Attendance -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                ✓
+            </div>
+
+            <h3>
+                Attendance Management
+            </h3>
+
+            <p>
+                Mark and manage student attendance
+                quickly and accurately.
+            </p>
+
+        </div>
+
+
+
+        <!-- Reports -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                📊
+            </div>
+
+            <h3>
+                Attendance Reports
+            </h3>
+
+            <p>
+                View attendance records and
+                generate useful reports.
+            </p>
+
+        </div>
+
+
+
+        <!-- Accounts -->
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🔐
+            </div>
+
+            <h3>
+                User Accounts
+            </h3>
+
+            <p>
+                Secure login and user account
+                management.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SCREENSHOTS ================= -->
+
+<section class="section screenshots-section"
+         id="screenshots">
+
+    <h2 class="section-title">
+        System Screenshots
+    </h2>
+
+    <p class="section-description">
+        A quick look at the major features of the system.
+    </p>
+
+
+    <div class="screenshot-container">
+
+
+        <!-- Add Student -->
+
+        <div class="screenshot-card">
+
+            <div class="screenshot-image">
+
+                <img src="{% static 'images/add-student.png' %}"
+                     alt="Add Student">
+
+            </div>
+
+            <h3>
+                Add Student
+            </h3>
+
+            <p>
+                Add and manage student information.
+            </p>
+
+        </div>
+
+
+
+        <!-- Student List -->
+
+        <div class="screenshot-card">
+
+            <div class="screenshot-image">
+
+                <img src="{% static 'images/student-list.png' %}"
+                     alt="Student List">
+
+            </div>
+
+            <h3>
+                Student List
+            </h3>
+
+            <p>
+                View and manage registered students.
+            </p>
+
+        </div>
+
+
+
+        <!-- Mark Attendance -->
+
+        <div class="screenshot-card">
+
+            <div class="screenshot-image">
+
+                <img src="{% static 'images/mark-attendance.png' %}"
+                     alt="Mark Attendance">
+
+            </div>
+
+            <h3>
+                Mark Attendance
+            </h3>
+
+            <p>
+                Record daily student attendance.
+            </p>
+
+        </div>
+
+
+
+        <!-- Attendance Report -->
+
+        <div class="screenshot-card">
+
+            <div class="screenshot-image">
+
+                <img src="{% static 'images/attendance-report.png' %}"
+                     alt="Attendance Report">
+
+            </div>
+
+            <h3>
+                Attendance Report
+            </h3>
+
+            <p>
+                View attendance records and reports.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="how-section">
+
+    <h2 class="section-title">
+        How It Works
+    </h2>
+
+
+    <div class="steps">
+
+
+        <div class="step">
+
+            <div class="step-number">
+                1
+            </div>
+
+            <h3>
+                Login
+            </h3>
+
+            <p>
+                Login to the system using
+                your account.
+            </p>
+
+        </div>
+
+
+        <div class="arrow">
+            →
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">
+                2
+            </div>
+
+            <h3>
+                Manage Students
+            </h3>
+
+            <p>
+                Add and manage student
+                information.
+            </p>
+
+        </div>
+
+
+        <div class="arrow">
+            →
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">
+                3
+            </div>
+
+            <h3>
+                Mark Attendance
+            </h3>
+
+            <p>
+                Record daily attendance
+                of students.
+            </p>
+
+        </div>
+
+
+        <div class="arrow">
+            →
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">
+                4
+            </div>
+
+            <h3>
+                Generate Reports
+            </h3>
+
+            <p>
+                View attendance records
+                and reports.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section"
+         id="about">
+
+    <div class="about-content">
+
+        <h2>
+            About the System
+        </h2>
+
+
+        <p>
+
+            The Attendance Management System is a
+            web-based application developed to simplify
+            the process of managing student attendance.
+
+        </p>
+
+
+        <p>
+
+            The system allows users to manage students,
+            mark attendance and view attendance reports
+            efficiently.
+
+        </p>
+
+
+        <div class="technology">
+
+            <span>Python</span>
+
+            <span>Django</span>
+
+            <span>HTML</span>
+
+            <span>CSS</span>
+
+            <span>SQLite</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+
+        ✓ Attendance Management System
+
+    </div>
+
+
+    <p>
+        © 2026 Attendance Management System
+    </p>
+
+
+    <p>
+        MCA Mini Project
+    </p>
+
+</footer>
+
+
+
+</body>
+
+</html>
